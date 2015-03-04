@@ -20,16 +20,17 @@ Need help? Just send emails shaogx@gmail.com.
 
 ### 3. configure
 
-output {
-				beanstalk {
-					delay => 0 # number, default: 0
-					host => '172.16.20.xxx' # string (required)
-					port => 11300 # number, default: 11300
-					priority => 65536 # number, default: 65536
-					ttr => 300 # number, default: 300
-					tube => 'logstash' # string (required)
-				}
-}
+    output {
+    		beanstalk {
+    		    delay => 0 # number, default: 0
+    		    host => '172.16.20.xxx' # string (required)
+    			port => 11300 # number, default: 11300
+    			priority => 65536 # number, default: 65536
+    			ttr => 300 # number, default: 300
+    			tube => 'logstash' # string (required)
+    		}
+    }
 
+Enjoy yourself!
 
 
